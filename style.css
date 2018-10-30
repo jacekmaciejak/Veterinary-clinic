@@ -6,12 +6,15 @@
 }
 
 /*--------------------------------Carousel-first--------------------------------------*/
+#carousel-first {
+    width: 100%;
+}
 
 .carousel-item img {
     max-height: 80vh;
-    width: 100vw;
     object-fit: cover;
     object-position: top;
+    width: 100%;
 }
 
 
@@ -88,6 +91,11 @@ footer {
 
 
 /*------------------------------SOCIAL MEDIA ICON--------------------------------------*/
+
+.icon {
+    height: 20vh;
+    display: grid;
+}
 
 .icon ul {
     display: flex;
