@@ -1,18 +1,18 @@
-/*
-.container-fluid img {
-    max-height: 55vh;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-*/
+/*--------------------------------Navbar--------------------------------------*/
 
+
+.navbar {
+    background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
+}
 
 /*--------------------------------Carousel-first--------------------------------------*/
 
-.carousel-inner-first{
-    
+.carousel-item img {
+    max-height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: top;
 }
-
 
 
 /*--------------------------------Carousel-second--------------------------------------*/
@@ -40,10 +40,6 @@
     -webkit-box-shadow: 1px 11px 19px 11px rgba(0, 0, 0, 0.74);
     box-shadow: 1px 11px 19px 11px rgba(0, 0, 0, 0.74);
 
-}
-
-.navbar {
-    background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
 }
 
 .pozycja-robocza {
