@@ -17,13 +17,16 @@
     width: 100%;
 }
 
-/*--------------------------------Carousel-second--------------------------------------*/
-#carousel-second {
+.xxx img {
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: top;
     width: 100%;
 }
 
-.carousel-item img {
-    max-height: 60vh;
+/*--------------------------------Carousel-second--------------------------------------*/
+#carousel-second {
+    width: 100%;
 }
 
 /*--------------------------------SERVICES--------------------------------------*/
