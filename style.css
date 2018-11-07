@@ -17,13 +17,16 @@
     width: 100%;
 }
 
+/*--------------------------------Carousel-second--------------------------------------*/
+#carousel-second {
+    width: 100%;
+}
+
+.carousel-item img {
+    max-height: 60vh;
+}
 
 /*--------------------------------SERVICES--------------------------------------*/
-
-.services-item {
-    padding: 0;
-
-}
 
 .services-item img {
     object-fit: cover;
@@ -57,7 +60,6 @@
 
 
 
-/*--------------------------------Carousel-second--------------------------------------*/
 
 
 
@@ -246,6 +248,7 @@
 footer {
     background-color: #333;
     color: #f7f7f7;
+    height: 15vh;
 }
 
 .footer__list {
