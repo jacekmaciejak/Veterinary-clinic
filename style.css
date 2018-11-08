@@ -2,8 +2,29 @@
 
 
 .navbar {
-    background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
+    background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+    height: 8vh;
 }
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav li a {
+    border-bottom: 5px solid transparent;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:active {
+    border-bottom: 5px solid #fa5270;
+    outline: none;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+
 
 /*--------------------------------Carousel-first--------------------------------------*/
 #carousel-first {
@@ -67,11 +88,6 @@
     object-fit: cover;
 
 }
-
-
-
-
-
 
 
 
