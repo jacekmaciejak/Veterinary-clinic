@@ -55,6 +55,13 @@
 
 
 /*--------------------------------INF--------------------------------------*/
+.inf-title {
+    display: inline-block;
+    background-image: linear-gradient(to right, #698beb, #589df0, #53adf1, #5ebcef, #73c9ec);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .inf img {
     max-height: 55vh;
     object-fit: cover;
@@ -243,7 +250,6 @@
     background: #e4405f;
 }
 
-/*--------------------------------END--------------------------------------------*/
 
 
 /*---------------------------------FOOTER-----------------------------------------*/
@@ -251,7 +257,13 @@
 footer {
     background-color: #333;
     color: #f7f7f7;
-    height: 15vh;
+    height: auto;
+}
+
+footer h2,
+h3,
+h4 {
+    letter-spacing: .3rem;
 }
 
 .footer__list {
@@ -263,7 +275,10 @@ footer {
 }
 
 .footer__copyright {
-    border-top: 1px solid #777;
+    border-top: 1px solid transparent;
+    letter-spacing: .1rem;
+    border-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+    border-image-slice: 1;
 }
 
 .footer__link:link,
