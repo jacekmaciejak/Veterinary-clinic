@@ -27,6 +27,16 @@ body {
     object-position: top;
 }
 
+.carousel-first {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-first h2 {
+    margin-top: 135px;
+}
+
 /*--------------------------------Carousel-second--------------------------------------*/
 #carousel-second {
     width: 100%;
