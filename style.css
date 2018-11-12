@@ -1,5 +1,8 @@
-/*--------------------------------Navbar--------------------------------------*/
+body {
+    font-family: 'Allerta Stencil', sans-serif;
+}
 
+/*--------------------------------Navbar--------------------------------------*/
 
 .navbar {
     background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
@@ -70,13 +73,6 @@
     object-fit: cover;
 
 }
-
-
-
-
-
-
-
 
 
 /*--------------------------------Text position on image--------------------------------------*/
