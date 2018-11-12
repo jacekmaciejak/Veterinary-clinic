@@ -1,15 +1,13 @@
+body {
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
 /*--------------------------------Navbar--------------------------------------*/
 
 
 .navbar {
     background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
 }
-
-
-
-
-
-
 
 /*------------------------------SLIDER--------------------------------------*/
 
@@ -28,9 +26,6 @@
     object-fit: cover;
     object-position: top;
 }
-
-
-
 
 /*------------------------------SOCIAL MEDIA ICON--------------------------------------*/
 
