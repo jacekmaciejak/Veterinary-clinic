@@ -7,10 +7,6 @@
 
 
 
-
-
-
-
 /*------------------------------SLIDER--------------------------------------*/
 
 .slider img {
@@ -31,6 +27,15 @@
 
 
 
+
+/*----------------------------Thematic Break (Horizontal Rule) element--------------------------------------*/
+
+
+hr {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+    border-image-slice: 1;
+}
 
 /*------------------------------SOCIAL MEDIA ICON--------------------------------------*/
 
