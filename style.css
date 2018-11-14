@@ -1,20 +1,9 @@
-<<<<<<< HEAD
 /*-----------------------------------------------------------------------------------------------
 ----------------------------------------MENU-----------------------------------------------------
 ------------------------------------------------------------------------------------------------*/
 
 .navigation__checkbox {
     display: none;
-=======
-body {
-    font-family: 'Allerta Stencil', sans-serif;
-}
-
-/*--------------------------------Navbar--------------------------------------*/
-
-.navbar {
-    background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
->>>>>>> master
 }
 
 .navigation__button {
@@ -43,7 +32,6 @@ body {
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-<<<<<<< HEAD
 .navigation__nav {
     height: 100vh;
     position: fixed;
@@ -69,78 +57,10 @@ body {
 /*
 .navigation__item {
     margin: 1rem;
-=======
-.carousel-box img {
-    max-height: 60vh;
-    object-fit: cover;
-    object-position: top;
-}
-
-.carousel-first {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-}
-
-.carousel-first h2 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: grid;
-    align-items: center;
-    margin: 0;
-}
-
-.carousel-first a {
-    position: relative;
-    top: 70%;
-}
-
-
-/*--------------------------------SERVICES--------------------------------------*/
-.services-item {
-    height: 20rem;
-}
-
-.services-item img {
-    object-fit: cover;
-}
-
-/*--------------------------------RESERVATION--------------------------------------*/
-
-.reservation img {
-    max-height: 55vh;
-    object-fit: cover;
-    -webkit-clip-path: polygon(15% 0, 100% 0%, 100% 70%, 85% 100%, 0% 100%, 0 30%);
-    clip-path: polygon(15% 0, 100% 0%, 100% 70%, 85% 100%, 0% 100%, 0 30%);
-}
-
-.reservation-title {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-}
-
-
-/*--------------------------------TEAM--------------------------------------*/
-.team img {
-    max-height: 55vh;
-    object-fit: cover;
-    -webkit-clip-path: polygon(0% 0%, 85% 0, 100% 30%, 99% 100%, 15% 100%, 0 70%);
-    clip-path: polygon(0% 0%, 85% 0, 100% 30%, 100% 100%, 15% 100%, 0 70%);
->>>>>>> master
 }
 */
 
-.team-title {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-}
 
-<<<<<<< HEAD
 .navigation__link:link,
 .navigation__link:visited {
     display: inline-block;
@@ -159,41 +79,6 @@ body {
 .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block;
-=======
-/*--------------------------------INF--------------------------------------*/
-
-
-.inf {
-    height: 45vh;
-}
-
-.inf img {
-    object-fit: cover;
-}
-
-/*--------------------------------BLOG--------------------------------------*/
-
-
-.blog-title {
-    display: inline-block;
-    background-image: linear-gradient(to right, #698beb, #589df0, #53adf1, #5ebcef, #73c9ec);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.blog {
-    height: 45vh;
-}
-
-.blog img {
-    object-fit: cover;
-}
-
-/*--------------------------------Text position on image--------------------------------------*/
-
-.img-opacity {
-    opacity: .7;
->>>>>>> master
 }
 
 
@@ -210,7 +95,6 @@ body {
     transform: scale(80);
 }
 
-<<<<<<< HEAD
 .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%;
@@ -218,21 +102,6 @@ body {
 
 /*ICON*/
 .navigation__icon {
-=======
-/*------------------------------SOCIAL MEDIA ICON--------------------------------------*/
-
-.icon {
-    height: 20vh;
-    display: grid;
-}
-
-.icon ul {
-    display: flex;
-    margin: 1%;
-}
-
-.icon ul li {
->>>>>>> master
     position: relative;
     margin-top: 3.5rem;
 }
@@ -284,75 +153,4 @@ body {
     top: 0;
     transform: rotate(-135deg);
 
-}
-
-
-
-
-
-
-
-
-/*--------------------------------------------------------------------------------
-                                        MEDIA
------------------------------------------------------------------------------------*/
-
-
-
-
-@media (max-width: 575.98px) {
-
-    .carousel-first h2 {
-        font-size: 1rem;
-    }
-
-    .services-item img {
-        height: 17rem;
-        padding: 0 15px 0 15px;
-    }
-
-    .reservation img,
-    .team img,
-    .inf img {
-        padding: 0 15px 0 15px;
-    }
-
-    .inf,
-    .blog {
-        height: 20rem;
-    }
-
-    .blog-title h1 {
-        font-size: 1.8rem;
-    }
-
-    footer h2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-    .carousel-first h2 {
-        font-size: 1.3rem;
-    }
-
-    #services {
-        max-width: 640px;
-    }
-
-    .services-item {
-        height: 270px;
-    }
-
-    .blog-title h1 {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-    .carousel-first h2 {
-        font-size: 1.6rem;
-    }
 }
