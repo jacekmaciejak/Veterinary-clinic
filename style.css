@@ -154,3 +154,318 @@
     transform: rotate(-135deg);
 
 }
+
+
+
+
+
+
+/*--------------------------------Carousel-first--------------------------------------*/
+#carousel-first {
+    width: 100%;
+}
+
+.carousel-item img {
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+
+.carousel-box img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+/*--------------------------------Carousel-second--------------------------------------*/
+#carousel-second {
+    width: 100%;
+}
+
+/*--------------------------------SERVICES--------------------------------------*/
+.services-item {
+    height: 20rem;
+}
+
+.services-item img {
+    object-fit: cover;
+}
+
+/*--------------------------------RESERVATION--------------------------------------*/
+
+.reservation img {
+    max-height: 55vh;
+    object-fit: cover;
+    -webkit-clip-path: polygon(15% 0, 100% 0%, 100% 70%, 85% 100%, 0% 100%, 0 30%);
+    clip-path: polygon(15% 0, 100% 0%, 100% 70%, 85% 100%, 0% 100%, 0 30%);
+}
+
+
+/*--------------------------------TEAM--------------------------------------*/
+.team img {
+    max-height: 55vh;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0% 0%, 85% 0, 100% 30%, 99% 100%, 15% 100%, 0 70%);
+    clip-path: polygon(0% 0%, 85% 0, 100% 30%, 100% 100%, 15% 100%, 0 70%);
+}
+
+
+/*--------------------------------INF--------------------------------------*/
+.inf-title {
+    display: inline-block;
+    background-image: linear-gradient(to right, #698beb, #589df0, #53adf1, #5ebcef, #73c9ec);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.inf img {
+    max-height: 55vh;
+    object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------Text position on image--------------------------------------*/
+
+.img-opacity {
+    opacity: .7;
+}
+
+.position {
+    z-index: 1;
+}
+
+.anim-el {
+    transition: all 0.5s;
+    outline-offset: .3rem;
+}
+
+.anim-el:hover {
+    transform: translateZ(-1.5rem) scale(1.1);
+    z-index: 100;
+    -webkit-box-shadow: 1px 11px 19px 11px rgba(0, 0, 0, 0.74);
+    box-shadow: 1px 11px 19px 11px rgba(0, 0, 0, 0.74);
+
+}
+
+.pozycja-robocza {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------
+----------------------------------------SOCIAL MEDIA ICONS--------------------------------------------
+------------------------------------------------------------------------------------------------*/
+
+.icon {
+    height: 20vh;
+    display: grid;
+}
+
+.icon ul {
+    display: flex;
+    margin: 1%;
+}
+
+.icon ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.icon ul li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 50px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(2px);
+    transform: scale(0.8);
+}
+
+.icon ul li:hover:before {
+    opacity: .2;
+    transform: scale(1);
+}
+
+.icon ul li a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    transition: 0.5s;
+    background: #ccc;
+}
+
+.icon ul li:hover a {
+    transform: translateY(-10px);
+}
+
+.icon ul li a span {
+    width: 100%;
+    height: 100%;
+}
+
+.icon ul li a span:before {
+    font-family: fontAwesome;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
+    color: #262626;
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.icon ul li:hover a span:before {
+    transform: rotateX(90deg) translateY(-50%);
+}
+
+.icon ul li a span:after {
+    font-family: fontAwesome;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #fff;
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transform: rotateX(90deg) translateY(50%);
+}
+
+.icon ul li:hover a span:after {
+    transform: rotateX(0deg) translateY(0);
+}
+
+.icon ul li:nth-child(1) a span:before,
+.icon ul li:nth-child(1) a span:after {
+    content: '\f09a';
+}
+
+.icon ul li:nth-child(2) a span:before,
+.icon ul li:nth-child(2) a span:after {
+    content: '\f099';
+}
+
+.icon ul li:nth-child(3) a span:before,
+.icon ul li:nth-child(3) a span:after {
+    content: '\f16d';
+}
+
+.icon ul li:nth-child(4) a span:before,
+.icon ul li:nth-child(4) a span:after {
+    content: '\f0d5';
+}
+
+.icon ul li:nth-child(5) a span:before,
+.icon ul li:nth-child(5) a span:after {
+    content: '\f0e1';
+}
+
+.icon ul li:nth-child(1) a span:after {
+    background: #3b5999;
+}
+
+.icon ul li:nth-child(2) a span:after {
+    background: #55acce;
+}
+
+.icon ul li:nth-child(3) a span:after {
+    background: #dd4b39;
+}
+
+.icon ul li:nth-child(4) a span:after {
+    background: #0077b5;
+}
+
+.icon ul li:nth-child(5) a span:after {
+    background: #e4405f;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------
+----------------------------------------FOOTER--------------------------------------------
+------------------------------------------------------------------------------------------------*/
+
+
+footer {
+    background-color: #333;
+    color: #f7f7f7;
+    height: auto;
+}
+
+footer h2,
+h3,
+h4 {
+    letter-spacing: .3rem;
+}
+
+.footer__list {
+    border-top: 1px solid #777;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.footer__copyright {
+    border-top: 1px solid transparent;
+    letter-spacing: .1rem;
+    border-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+    border-image-slice: 1;
+}
+
+.footer__link:link,
+.footer__link:visited {
+    color: #f7f7f7;
+    background-color: #333;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.footer__link:hover,
+.footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+    transform: rotate(5deg) scale(1.3);
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------
+----------------------------------------MEDIA QUERIES--------------------------------------------
+------------------------------------------------------------------------------------------------*/
