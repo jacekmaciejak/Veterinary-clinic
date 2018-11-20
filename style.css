@@ -2,165 +2,11 @@
 ----------------------------------------MENU-----------------------------------------------------
 ------------------------------------------------------------------------------------------------*/
 
-.navigation__checkbox {
-    display: none;
+body {
+    font-family: 'Allerta Stencil', sans-serif;
 }
 
-.navigation__button {
-    background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
-    height: 7rem;
-    width: 7rem;
-    position: fixed;
-    top: 6rem;
-    right: 6rem;
-    border-radius: 50%;
-    z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba(#000, .1);
-    text-align: center;
-    cursor: pointer;
-}
-
-.navigation__background {
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
-    background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
-    z-index: 1000;
-    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-.navigation__nav {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1500;
-    opacity: 0;
-    width: 0;
-    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.navigation__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: start;
-    width: 100%;
-    margin-left: 40%;
-}
-
-/*
-.navigation__item {
-    margin: 1rem;
-}
-*/
-
-
-.navigation__link:link,
-.navigation__link:visited {
-    display: inline-block;
-    font-size: 2.8rem;
-    font-weight: 300;
-    padding: 1rem 2rem;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f55872 50%);
-    background-size: 230%;
-    transition: all .4s;
-}
-
-.navigation__link:link span,
-.navigation__link:visited span {
-    margin-right: 1.5rem;
-    display: inline-block;
-}
-
-
-.navigation__link:hover,
-.navigation__link:active {
-    background-position: 100%;
-    /*color: #698BEB;*/
-    transform: translateX(1rem);
-}
-
-
-/*FUNCTIONALITY*/
-.navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(80);
-}
-
-.navigation__checkbox:checked ~ .navigation__nav {
-    opacity: 1;
-    width: 100%;
-}
-
-/*ICON*/
-.navigation__icon {
-    position: relative;
-    margin-top: 3.5rem;
-}
-
-.navigation__icon,
-.navigation__icon::before,
-.navigation__icon::after {
-    width: 3rem;
-    height: 2px;
-    background-color: #333;
-    display: inline-block;
-}
-
-.navigation__icon::before,
-.navigation__icon::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    transition: all .2s;
-}
-
-.navigation__icon::before {
-    top: -.8rem;
-}
-
-.navigation__icon::after {
-    top: .8rem;
-}
-
-
-.navigation__button:hover .navigation__icon::before {
-    top: -1rem;
-}
-
-.navigation__button:hover .navigation__icon::after {
-    top: 1rem;
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-    background-color: transparent;
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-
-}
-
-
-
-
-
-
-/*--------------------------------Carousel-first--------------------------------------*/
+/*--------------------------------CAROUSEL--------------------------------------*/
 #carousel-first {
     width: 100%;
 }
@@ -172,17 +18,27 @@
     width: 100%;
 }
 
-.carousel-box img {
-    width: 100%;
-    max-height: 60vh;
-    object-fit: cover;
-    object-position: top;
+
+.carousel-first {
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 
-/*--------------------------------Carousel-second--------------------------------------*/
-#carousel-second {
-    width: 100%;
+.carousel-first h2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    align-items: center;
+    margin: 0;
 }
+
+.carousel-first a {
+    position: relative;
+    top: 70%;
+}
+
 
 /*--------------------------------SERVICES--------------------------------------*/
 .services-item {
@@ -202,6 +58,12 @@
     clip-path: polygon(15% 0, 100% 0%, 100% 70%, 85% 100%, 0% 100%, 0 30%);
 }
 
+.reservation-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
 
 /*--------------------------------TEAM--------------------------------------*/
 .team img {
@@ -209,75 +71,46 @@
     object-fit: cover;
     -webkit-clip-path: polygon(0% 0%, 85% 0, 100% 30%, 99% 100%, 15% 100%, 0 70%);
     clip-path: polygon(0% 0%, 85% 0, 100% 30%, 100% 100%, 15% 100%, 0 70%);
-
 }
 
-
-/*--------------------------------INF--------------------------------------*/
-.inf-title {
-    display: inline-block;
-    background-image: linear-gradient(to right, #698beb, #589df0, #53adf1, #5ebcef, #73c9ec);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.inf img {
-    max-height: 55vh;
-    object-fit: cover;
-
-}
-
-
-
-/*--------------------------------Text position on image--------------------------------------*/
-
-.img-opacity {
-    opacity: .7;
-}
-
-.navigation__link:link,
-.navigation__link:visited {
-    display: inline-block;
-    font-size: 2.8rem;
-    font-weight: 300;
-    padding: 1rem 2rem;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f55872 50%);
-    background-size: 230%;
-    transition: all .4s;
-}
-
-.navigation__link:link span,
-.navigation__link:visited span {
-    margin-right: 1.5rem;
-    display: inline-block;
-}
-
-.position {
-    z-index: 1;
-}
-
-.anim-el {
-    transition: all 0.5s;
-    outline-offset: .3rem;
-}
-
-.anim-el:hover {
-    transform: translateZ(-1.5rem) scale(1.1);
-    z-index: 100;
-    -webkit-box-shadow: 1px 11px 19px 11px rgba(0, 0, 0, 0.74);
-    box-shadow: 1px 11px 19px 11px rgba(0, 0, 0, 0.74);
-}
-
-.pozycja-robocza {
+.team-title {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
 }
 
+
+/*--------------------------------INF--------------------------------------*/
+
+.inf img {
+    max-height: 55vh;
+    object-fit: cover;
+}
+
+/*--------------------------------BLOG--------------------------------------*/
+
+
+.blog-title {
+    display: inline-block;
+    background-image: linear-gradient(to right, #698beb, #589df0, #53adf1, #5ebcef, #73c9ec);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.blog {
+    height: 55vh;
+}
+
+.blog img {
+    object-fit: cover;
+}
+
+/*--------------------------------Text position on image--------------------------------------*/
+
+.img-opacity {
+    opacity: .7;
+}
 
 
 /*-----------------------------------------------------------------------------------------------
@@ -287,6 +120,8 @@
 .icon {
     height: 20vh;
     display: grid;
+    background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+
 }
 
 .icon ul {
@@ -295,23 +130,6 @@
 }
 
 .icon ul li {
-    opacity: 1;
-    width: 100%;
-}
-
-.navigation__checkbox:checked ~ .navigation__nav {
-    opacity: 1;
-    width: 100%;
-}
-
-/*ICON*/
-.navigation__icon {
-    position: relative;
-    margin-top: 3.5rem;
-}
-
-/*ICON*/
-.navigation__icon {
     position: relative;
     list-style: none;
     margin: 0 10px;
@@ -493,9 +311,64 @@ h4 {
 
 
 
-
-
-
 /*-----------------------------------------------------------------------------------------------
 ----------------------------------------MEDIA QUERIES--------------------------------------------
 ------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 575.98px) {
+
+    .carousel-first h2 {
+        font-size: 1rem;
+    }
+
+    .services-item img {
+        height: 17rem;
+        padding: 0 15px 0 15px;
+    }
+
+    .reservation img,
+    .team img,
+    .inf img {
+        padding: 0 15px 0 15px;
+    }
+
+    .inf,
+    .blog {
+        height: 20rem;
+    }
+
+    .blog-title h1 {
+        font-size: 1.8rem;
+    }
+
+    footer h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .carousel-first h2 {
+        font-size: 1.3rem;
+    }
+
+    #services {
+        max-width: 640px;
+    }
+
+    .services-item {
+        height: 270px;
+    }
+
+    .blog-title h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .carousel-first h2 {
+        font-size: 1.6rem;
+    }
+}
