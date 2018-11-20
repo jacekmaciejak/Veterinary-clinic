@@ -1,7 +1,3 @@
-/*-----------------------------------------------------------------------------------------------
-----------------------------------------MENU-----------------------------------------------------
-------------------------------------------------------------------------------------------------*/
-
 body {
     font-family: 'Allerta Stencil', sans-serif;
 }
@@ -15,6 +11,87 @@ body {
     background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
     color: #698beb;
     border-color: transparent;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------
+----------------------------------------MENU-----------------------------------------------------
+------------------------------------------------------------------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+
+}
+
+header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #fff;
+    background: #2196f3;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 34px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:991px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
 
 /*--------------------------------CAROUSEL--------------------------------------*/
