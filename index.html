@@ -28,24 +28,29 @@
 
 <body>
 
-    <header>
-        <div class="logo">LOGO</div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">XXXXX</a></li>
-                <li><a href="#">XXXXX</a></li>
-                <li><a href="#">XXXXX</a></li>
-                <li><a href="#">XXXXX</a></li>
-                <li><a href="#">XXXXX</a></li>
-                <li><a href="#">XXXXX</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-    </header>
-
-
-
-
+    <nav class="container-fluid">
+        <div class="row">
+            <div class="navigation">
+                <div class="logo">LOGO</div>
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+                <div class="navigation__background">&nbsp;</div>
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#section" class="navigation__link active"><span>01</span>Home</a></li>
+                        <li class="navigation__item"><a href="#section" class="navigation__link"><span>02</span>Clinic 24H</a></li>
+                        <li class="navigation__item"><a href="#section" class="navigation__link"><span>03</span>Salon</a></li>
+                        <li class="navigation__item"><a href="#section" class="navigation__link"><span>04</span>Shop</a></li>
+                        <li class="navigation__item"><a href="#section" class="navigation__link"><span>05</span>Career</a></li>
+                        <li class="navigation__item"><a href="#section" class="navigation__link"><span>06</span>Blog</a></li>
+                        <li class="navigation__item"><a href="#footer" class="navigation__link"><span>07</span>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
 
     <section class="container-fluid">
         <div class="row">
