@@ -84,7 +84,7 @@ body {
 /*--------------------------------INF--------------------------------------*/
 
 .inf img {
-    max-height: 55vh;
+    height: 45vh;
     object-fit: cover;
 }
 
