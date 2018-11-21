@@ -39,20 +39,20 @@
                 <div class="navigation__background">&nbsp;</div>
                 <nav class="navigation__nav">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#section" class="navigation__link active"><span>01</span>Home</a></li>
-                        <li class="navigation__item"><a href="#section" class="navigation__link"><span>02</span>Clinic 24H</a></li>
-                        <li class="navigation__item"><a href="#section" class="navigation__link"><span>03</span>Salon</a></li>
-                        <li class="navigation__item"><a href="#section" class="navigation__link"><span>04</span>Shop</a></li>
+                        <li class="navigation__item"><a href="#section-container" class="navigation__link active"><span>01</span>Home</a></li>
+                        <li class="navigation__item"><a href="#rsv" class="navigation__link"><span>02</span>Clinic 24H</a></li>
+                        <li class="navigation__item"><a href="#team-id" class="navigation__link"><span>03</span>Salon</a></li>
+                        <li class="navigation__item"><a href="#inf-id" class="navigation__link"><span>04</span>Shop</a></li>
                         <li class="navigation__item"><a href="#section" class="navigation__link"><span>05</span>Career</a></li>
                         <li class="navigation__item"><a href="#section" class="navigation__link"><span>06</span>Blog</a></li>
-                        <li class="navigation__item"><a href="#footer" class="navigation__link"><span>07</span>Contact</a></li>
+                        <li class="navigation__item"><a href="#footer-id" class="navigation__link"><span>07</span>Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </nav>
 
-    <section class="container-fluid">
+    <section class="container-fluid" id="section-container">
         <div class="row">
             <div id="carousel-first" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -161,7 +161,7 @@
         </div>
     </section>
 
-    <section class="container-fluid">
+    <section class="container-fluid" id="rsv">
         <div class="row">
             <div class="reservation col-12">
                 <img class="w-100 rounded img-opacity" src="img/img4.jpg" alt="Cat">
@@ -176,7 +176,7 @@
         </div>
     </section>
 
-    <section class="container-fluid">
+    <section class="container-fluid" id="team-id">
         <div class="row">
             <div class="team col-12 my-4 my-sm-5">
                 <img class="w-100 rounded img-opacity" src="img/img5.jpg" alt="Dog">
@@ -192,7 +192,7 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="inf-id">
         <div class="row">
             <div class="col-md-6 inf">
                 <a href="#">
@@ -246,7 +246,7 @@
         </div>
     </section>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid" id="footer-id">
         <div class="row">
             <div class="col-12 my-5 d-block mx-auto text-center">
                 <h2 class="pb-4 font-weight-bold text-uppercase">Contact with us</h2>
@@ -273,6 +273,31 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+    <!-- JavaScript Function closing menu after click on menu item/link -->
+    <script>
+        (function() {
+            function uncheckNav() {
+                document.getElementById("navi-toggle").checked = false;
+            }
+
+            function setNavOnclick() {
+                Array.from(
+                        document.getElementsByClassName("navigation__link")
+                    )
+                    .map(navLink => navLink.addEventListener("click", uncheckNav));
+            }
+
+            function main() {
+                setNavOnclick();
+            }
+
+            main();
+        })()
+
+    </script>
 
 
 
