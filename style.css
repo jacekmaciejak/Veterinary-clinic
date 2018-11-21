@@ -36,7 +36,8 @@ body {
     background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
     display: flex;
     justify-content: space-around;
-    font-size: 1.4rem
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -114,15 +115,14 @@ body {
     }
 
     .navigation__nav {
-        float: right;
+        opacity: 0;
         height: 100vh;
-        width: 100%;
+        width: 0;
+        float: right;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         z-index: 2200;
-        opacity: 0;
-        width: 0;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
@@ -161,7 +161,6 @@ body {
         display: inline-block;
     }
 
-
     .navigation__link:hover,
     .navigation__link:active {
         background-position: 100%;
@@ -177,6 +176,7 @@ body {
     .navigation__checkbox:checked ~ .navigation__nav {
         opacity: 1;
         width: 100%;
+        left: 0;
     }
 
 
