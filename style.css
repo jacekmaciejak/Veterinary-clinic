@@ -29,7 +29,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 50px;
     width: 100%;
     box-sizing: border-box;
     z-index: 10000;
@@ -43,7 +42,7 @@ body {
 .logo {
     color: #fff;
     line-height: 50px;
-    font-size: 30px;
+    font-size: 1.8rem;
     float: left;
     margin: 10px 0;
 }
@@ -88,13 +87,22 @@ body {
 @media (max-width:991px) {
 
 
+    .navigation {
+        width: 15vw;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
     .navigation__button {
         background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
-        height: 7rem;
-        width: 7rem;
+        height: 5rem;
+        width: 5rem;
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 3rem;
+        right: 3rem;
         border-radius: 50%;
         z-index: 3000;
         box-shadow: 0 1rem 3rem rgba(#000, .1);
@@ -103,12 +111,12 @@ body {
     }
 
     .navigation__background {
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
+        top: 3.5rem;
+        right: 3.5rem;
         background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
         z-index: 2000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -183,14 +191,14 @@ body {
     /*ICON*/
     .navigation__icon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 2.5rem;
     }
 
     .navigation__icon,
     .navigation__icon::before,
     .navigation__icon::after {
-        width: 3rem;
-        height: 2px;
+        width: 2.5rem;
+        height: 3px;
         background-color: #333;
         display: inline-block;
     }
@@ -563,6 +571,14 @@ footer h4 {
 
 
 @media (max-width: 575.98px) {
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .navigation {
+        width: 20vw;
+    }
 
     .carousel-first h2 {
         font-size: 1rem;
