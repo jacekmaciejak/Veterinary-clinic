@@ -32,7 +32,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     z-index: 10000;
-    background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+    background-color: #80bef3;
     display: flex;
     justify-content: space-around;
     font-size: 1.4rem;
@@ -140,13 +140,14 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         list-style: none;
-        text-align: center;
         width: 100%;
         display: inherit;
+        display: grid;
+        justify-content: center;
     }
 
-    .navigation__item {
-        margin: .6rem;
+    .navigation__link {
+        margin: .8rem 0;
     }
 
     .navigation__link:link,
