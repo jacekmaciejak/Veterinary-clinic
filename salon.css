@@ -76,10 +76,6 @@ body {
     transition: all .7s;
 }
 
-
-
-
-
 @media (max-width:991px) {
 
 
@@ -235,9 +231,23 @@ body {
 
 .slider img {
     width: 100%;
-    max-height: 60vh;
+    height: 60vh;
     object-fit: cover;
     object-position: top;
+}
+
+.transparency {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(37, 29, 29, 0.3) 0%, rgba(37, 29, 29, 0.4) 35%, rgba(86, 58, 58, 0.28) 75%, transparent 100%);
+}
+
+/*------------------------------ICON--------------------------------------*/
+
+.icon {
+    height: 12vh !important;
 }
 
 /*------------------------------Panel - FIRST--------------------------------------*/
@@ -246,7 +256,7 @@ body {
     width: 100%;
     height: 55vh;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 /*------------------------------SOCIAL MEDIA ICON--------------------------------------*/
@@ -436,3 +446,73 @@ h4 {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
     transform: rotate(5deg) scale(1.3);
 }
+
+hr {
+
+    border-top: 1px solid transparent;
+    letter-spacing: .1rem;
+    border-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+    border-image-slice: 1;
+
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------
+----------------------------------------MEDIA QUERIES--------------------------------------------
+------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 575.98px) {
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .navigation {
+        width: 20vw;
+    }
+
+    .icon ul li:before {
+        width: 35px;
+    }
+
+    .icon ul li a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon ul li a span:before,
+    .icon ul li a span:after {
+        font-size: 1.2rem;
+        line-height: 38px;
+    }
+
+    .icon ul li a span:after .services-item img {
+        height: 17rem;
+        padding: 0 15px 0 15px;
+    }
+
+    .slider img {
+        max-height: 40vh;
+    }
+
+    .panel-first img {
+        height: 30vh;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .slider img {
+        max-height: 40vh;
+    }
+
+    .panel-first img {
+        height: 35vh;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
