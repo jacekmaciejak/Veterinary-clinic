@@ -19,10 +19,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 10000;
     background-color: #80bef3;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -44,6 +48,8 @@ body {
 .navigation__list {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -65,6 +71,7 @@ body {
     color: #fff;
     text-decoration: none;
     background-position: 100%;
+    -webkit-transform: translateX(1rem);
     transform: translateX(1rem);
 }
 
@@ -73,6 +80,7 @@ body {
     display: inline-block;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f55872 50%);
     background-size: 230%;
+    -webkit-transition: all .7s;
     transition: all .7s;
 }
 
@@ -89,6 +97,7 @@ body {
     }
 
     .navigation__button {
+        background-image: -webkit-gradient(linear, left top, right top, from(#698beb), color-stop(#6ba6f2), color-stop(#80bef3), color-stop(#a2d4f3), to(#cbe8f4));
         background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
         height: 5rem;
         width: 5rem;
@@ -97,6 +106,7 @@ body {
         right: 3rem;
         border-radius: 50%;
         z-index: 3000;
+        -webkit-box-shadow: 0 1rem 3rem rgba(#000, .1);
         box-shadow: 0 1rem 3rem rgba(#000, .1);
         text-align: center;
         cursor: pointer;
@@ -109,9 +119,13 @@ body {
         position: fixed;
         top: 3.5rem;
         right: 3.5rem;
+        background-image: -webkit-gradient(linear, left top, right top, from(#698beb), color-stop(#6ba6f2), color-stop(#80bef3), color-stop(#a2d4f3), to(#cbe8f4));
         background-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
         z-index: 2000;
+        -webkit-transition: -webkit-transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: -webkit-transform .8s cubic-bezier(0.86, 0, 0.07, 1);
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     }
 
     .navigation__nav {
@@ -123,6 +137,7 @@ body {
         top: 0;
         left: -100%;
         z-index: 2200;
+        -webkit-transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
@@ -130,11 +145,14 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         list-style: none;
         width: 100%;
         display: inherit;
         display: grid;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -155,6 +173,7 @@ body {
 
     /*FUNCTIONALITY*/
     .navigation__checkbox:checked ~ .navigation__background {
+        -webkit-transform: scale(80);
         transform: scale(80);
     }
 
@@ -185,6 +204,7 @@ body {
         content: "";
         position: absolute;
         left: 0;
+        -webkit-transition: all .2s;
         transition: all .2s;
     }
 
@@ -211,6 +231,7 @@ body {
 
     .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
         top: 0;
+        -webkit-transform: rotate(135deg);
         transform: rotate(135deg);
         bottom: 0;
     }
@@ -218,6 +239,7 @@ body {
     .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
         position: absolute;
         top: 0;
+        -webkit-transform: rotate(-135deg);
         transform: rotate(-135deg);
     }
 
@@ -230,13 +252,16 @@ body {
 .slider-title {
     position: absolute;
     top: 55%;
+    -webkit-transform: translateY(-55%);
     transform: translateY(-55%);
 }
 
 .slider img {
     width: 100%;
     height: 60vh;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: top;
     object-position: top;
 }
 
@@ -245,6 +270,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 29, 29, 0.3)), color-stop(35%, rgba(37, 29, 29, 0.4)), color-stop(75%, rgba(86, 58, 58, 0.28)), to(transparent));
     background-image: linear-gradient(rgba(37, 29, 29, 0.3) 0%, rgba(37, 29, 29, 0.4) 35%, rgba(86, 58, 58, 0.28) 75%, transparent 100%);
 }
 
@@ -259,7 +285,9 @@ body {
 .panel-first img {
     width: 100%;
     height: 55vh;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
 }
 
@@ -271,6 +299,8 @@ body {
 }
 
 .icon ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 1%;
 }
@@ -290,14 +320,18 @@ body {
     height: 8px;
     background: #000;
     border-radius: 50%;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     opacity: 0;
+    -webkit-filter: blur(2px);
     filter: blur(2px);
+    -webkit-transform: scale(0.8);
     transform: scale(0.8);
 }
 
 .icon ul li:hover:before {
     opacity: .2;
+    -webkit-transform: scale(1);
     transform: scale(1);
 }
 
@@ -305,11 +339,13 @@ body {
     width: 50px;
     height: 50px;
     display: block;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     background: #ccc;
 }
 
 .icon ul li:hover a {
+    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
 }
 
@@ -328,13 +364,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#cdffc8), color-stop(#bbffb6), color-stop(#a8ffa4), color-stop(#92ff92), to(#7aff80));
     background-image: linear-gradient(to right, #cdffc8, #bbffb6, #a8ffa4, #92ff92, #7aff80);
     color: #262626;
+    -webkit-transform-origin: top;
     transform-origin: top;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .icon ul li:hover a span:before {
+    -webkit-transform: rotateX(90deg) translateY(-50%);
     transform: rotateX(90deg) translateY(-50%);
 }
 
@@ -350,12 +392,18 @@ body {
     height: 100%;
     background: #fff;
     color: #fff;
+    -webkit-transform-origin: bottom;
     transform-origin: bottom;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: rotateX(90deg) translateY(50%);
     transform: rotateX(90deg) translateY(50%);
 }
 
 .icon ul li:hover a span:after {
+    -webkit-transform: rotateX(0deg) translateY(0);
     transform: rotateX(0deg) translateY(0);
 }
 
@@ -431,6 +479,8 @@ h4 {
 .footer__copyright {
     border-top: 1px solid transparent;
     letter-spacing: .1rem;
+    -o-border-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+    border-image: -webkit-gradient(linear, left top, right top, from(#698beb), color-stop(#6ba6f2), color-stop(#80bef3), color-stop(#a2d4f3), to(#cbe8f4));
     border-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
     border-image-slice: 1;
 }
@@ -441,13 +491,16 @@ h4 {
     background-color: #333;
     text-decoration: none;
     display: inline-block;
+    -webkit-transition: all .2s;
     transition: all .2s;
 }
 
 .footer__link:hover,
 .footer__link:active {
     color: #55c57a;
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+    -webkit-transform: rotate(5deg) scale(1.3);
     transform: rotate(5deg) scale(1.3);
 }
 
@@ -455,6 +508,8 @@ hr {
 
     border-top: 1px solid transparent;
     letter-spacing: .1rem;
+    -o-border-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
+    border-image: -webkit-gradient(linear, left top, right top, from(#698beb), color-stop(#6ba6f2), color-stop(#80bef3), color-stop(#a2d4f3), to(#cbe8f4));
     border-image: linear-gradient(to right, #698beb, #6ba6f2, #80bef3, #a2d4f3, #cbe8f4);
     border-image-slice: 1;
 
