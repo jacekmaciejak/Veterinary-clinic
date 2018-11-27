@@ -315,6 +315,7 @@ body {
 .services-item img {
     -o-object-fit: cover;
     object-fit: cover;
+    background-size: cover;
 }
 
 /*--------------------------------RESERVATION--------------------------------------*/
