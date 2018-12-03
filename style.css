@@ -318,6 +318,7 @@ body {
     background-size: cover;
 }
 
+
 /*--------------------------------RESERVATION--------------------------------------*/
 
 .reservation img {
@@ -381,8 +382,6 @@ body {
     -o-object-fit: cover;
     object-fit: cover;
 }
-
-/*--------------------------------Text position on image--------------------------------------*/
 
 .img-opacity {
     opacity: .9;
