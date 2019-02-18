@@ -1,6 +1,6 @@
-# Klinika
+# Veterinary clinic
 
-https://jacekmaciejak.github.io/Klinika/
+https://jacekmaciejak.github.io/Veterinary-clinic/. 
 
 
 The site has been built using the following technologies:
