@@ -182,10 +182,34 @@
 		</div>
 	</footer>
 
+	<!-- JavaScript Function closing menu after click on menu item/link -->
+	<script>
+		(function() {
+			function uncheckNav() {
+				document.getElementById("navi-toggle").checked = false;
+			}
+
+			function setNavOnclick() {
+				Array.from(
+					document.getElementsByClassName("navigation__link")
+				)
+					.map(navLink => navLink.addEventListener("click", uncheckNav));
+			}
+
+			function main() {
+				setNavOnclick();
+			}
+
+			main();
+		})()
+
+	</script>
+
 	<!-- Bootstrap core JavaScript
 ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 	<script>
