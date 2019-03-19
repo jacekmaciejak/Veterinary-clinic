@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/blog.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+	<script src="scripts/close_menu.js" defer></script>
 
 	<!--------------------------------Favicon------------------------------------->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -152,29 +152,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<!-- JavaScript Function closing menu after click on menu item/link -->
-	<script>
-		(function() {
-			function uncheckNav() {
-				document.getElementById("navi-toggle").checked = false;
-			}
-
-			function setNavOnclick() {
-				Array.from(
-						document.getElementsByClassName("navigation__link")
-					)
-					.map(navLink => navLink.addEventListener("click", uncheckNav));
-			}
-
-			function main() {
-				setNavOnclick();
-			}
-
-			main();
-		})()
-
-	</script>
 
 	<!-- Bootstrap core JavaScript
 ================================================== -->
