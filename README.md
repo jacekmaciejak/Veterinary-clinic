@@ -1,7 +1,6 @@
 # Veterinary clinic
 
-https://jacekmaciejak.github.io/Veterinary-clinic/. 
-
+### [Live Site](https://jacekmaciejak.github.io/Veterinary-clinic/) 
 
 The site has been built using the following technologies:
 
