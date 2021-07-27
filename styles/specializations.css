@@ -19,6 +19,8 @@
 	margin-bottom: 3rem;
 	background-color: #fff;
 	height: 23rem;
+	transition: all .6s;
+
 }
 
 .panel-third:hover,
